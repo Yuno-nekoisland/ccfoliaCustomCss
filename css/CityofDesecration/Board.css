@@ -1,0 +1,13 @@
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/board.css");
+/*オブジェクトを操作できるように活性化させる。*/
+[role="presentation"]:not(.MuiSnackbar-root) {
+	display: inline;
+}
+/*吹き出しを出す*/
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+	display: block;
+}
+/*edit.cssっぽいがなぜ......？
+button.MuiFab-root {
+	display: block;
+}*/
