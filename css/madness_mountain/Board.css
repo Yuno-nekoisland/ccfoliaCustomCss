@@ -1,8 +1,13 @@
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/board.css");
-@import url("https://yuno-nekoisland.github.io/ccfoliaCustomCss/css/balloon/main.css");
+@import url("https://yuno-nekoisland.github.io/ccfoliaCustomCss/css/madness_mountain/dicewindow.css");
 /*balloon.css　吹き出しを出す*/
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
 	display: block;
+}
+/*DiceWindowの位置調整*/
+:root{
+	--balloon-right: 750px;
+	--balloon-bottom: 50px;
 }
 /*board.css　盤面そのものを消す*/
 div[tabindex="0"][style^="right:"]>div:nth-child(1) {
