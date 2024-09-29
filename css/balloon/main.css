@@ -104,7 +104,7 @@
 }
 
 /* カスタム用 */
-div[tabindex="0"]>.MuiPaper-root {
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
   background-color: transparent;
   max-width: var(--balloon-width);
   left: 5px;
