@@ -1,0 +1,73 @@
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css");
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-scrollbar.css");
+::-webkit-scrollbar {
+    display: none !important;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css");
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+    display: none;
+}
+/*□@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
+.MuiDrawer-root.MuiDrawer-docked {
+    display: none;
+}
+
+/* 盤面 */
+div[tabindex="0"][style^="right:"] {
+    width: 100%;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");
+button.MuiFab-root {
+    display: none;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");
+header.MuiAppBar-positionFixed {
+    display: none;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/modal.css");
+[role="presentation"]:not(.MuiSnackbar-root) {
+    display: none;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/monitoring.css");
+.MuiSnackbar-root {
+    display: none;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/newDice.css");
+div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"] {
+    display: none;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");
+div[tabindex="0"][style^="right:"] > div:not([class], [id]) + div {
+    display: none;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css");
+div[tabindex="0"]>div:not([class])+div+div:not(.MuiPaper-root),
+div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6+div {
+    display: none;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/timer.css");
+.MuiPaper-elevation5 {
+    display: none;
+}
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");
+#root>div>div[tabindex="0"][style] > div:nth-child(3) {
+    display: none;
+}
+
+
+/* 盤面の枠線 */
+div[style^="touch-action"]>div[style^="transform: translate"]>div[style^="transform: scale"]>div:first-child {
+  outline: unset !important;
+}
+
+/* ポップアップ */
+[role="tooltip"]>div {
+  font-size: 1.3rem !important;
+  max-width: 1280px;
+}
