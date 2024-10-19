@@ -1,8 +1,1 @@
 @import url("https://yuno-nekoisland.github.io/ccfoliaCustomCss/css/Hello_new_World/importCss/board.css");
-/*▼変数▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
-/*DiceWindowの位置調整*/
-:root{
-	--balloon-left: 0px;
-	--balloon-right: 750px;
-	--balloon-bottom: 50px;
-}

@@ -11,3 +11,26 @@ div[tabindex="0"][style^="right:"]>div:nth-child(1) {
 header.MuiAppBar-positionFixed+div {
 	display: block;
 }
+
+/*▼▼紅坂柚月(@yudukiak)さん参考。DiceWindowのアイコン装飾*/
+.MuiPaper-root>img {
+	display: var(--image-display);
+	width: var(--image-width);
+	height: var(--image-height);
+	margin-bottom: var(--image-margin);
+	background: var(--image-background);
+	border: solid var(--image-border-width) var(--image-border-color);
+	border-radius: var(--image-border-radius);
+	object-fit: cover;
+	object-position: top;
+}
+:root{
+	--image-display: block;
+	--image-width: 120px;
+	--image-height: 120px;
+	--image-margin: .5rem;
+	--image-background: var(--background-color, rgb(133, 133, 133));
+	--image-border-width: var(--border-width, 6px);
+	--image-border-color: var(--border-color, rgb(0, 0, 0));
+	--image-border-radius: 50%;
+}
