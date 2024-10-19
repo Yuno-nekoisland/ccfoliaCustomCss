@@ -13,7 +13,7 @@ body {
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
     display: none;
 }
-/*□@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
+/*□*/@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
 .MuiDrawer-root.MuiDrawer-docked {
     display: none;
 }
