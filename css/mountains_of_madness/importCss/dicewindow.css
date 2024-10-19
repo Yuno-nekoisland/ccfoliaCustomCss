@@ -1,0 +1,14 @@
+/*▼DiceWindowを出す
+	@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/board.css");により盤面のみの表示になっているため、
+	DiceWindowを活性化させる設定。
+*/
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+	display: block;
+}
+
+/*DiceWindowの変数設定*/
+div[tabindex="0"]>.MuiPaper-root.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+	left: var(--balloon-left);
+	right: var(--balloon-right);
+	bottom: var(--balloon-bottom);
+}
