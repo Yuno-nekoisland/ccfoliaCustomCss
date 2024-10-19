@@ -1,0 +1,16 @@
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/board.css");
+@import url("https://yuno-nekoisland.github.io/ccfoliaCustomCss/css/madness_mountain/dicewindow.css");
+
+/*▼変数▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+/*DiceWindowの位置調整*/
+:root{
+	--balloon-left: 0px;
+	--balloon-right: 1000px;
+	--balloon-bottom: 50px;
+}
+
+/*▼各要素操作▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+/*タイマー表示*/
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation5 {
+    display: block;
+}

@@ -2,8 +2,8 @@
 :root {
 	--avatar-padding: 0;
 	--avatar-display: none;
-	--status-column: 2;
 	--status-width: 110px;
 	--status-height: 25px;
 	--status-font-size: 1.0rem;
+	--status-column: 2;
 }

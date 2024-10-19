@@ -1,0 +1,13 @@
+/*▼使えそうなメモ*/
+
+/*▼▼紅坂柚月(@yudukiak)さんのDiceWindowを使う場合の、前景や背景を映したいときのメモ*/
+
+/*board.css:盤面そのものを消す*/
+div[tabindex="0"][style^="right:"]>div:nth-child(1) {
+	display: block;
+}
+
+/*boardBackground.css:盤面の「背景」を消す*/
+header.MuiAppBar-positionFixed+div {
+	display: block;
+}
