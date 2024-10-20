@@ -9,6 +9,7 @@
 /*TODO:edit.cssの中身を参照しないようにしても、鉛筆ボタンが非活性のまま。他で影響されている？*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");						/*鉛筆マークを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");						/*ヘッダーを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/markerPanel.css");					/*「マーカーパネル」を消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/modal.css");						/*広告動画のUIを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/monitoring.css");					/*監視モードお知らせを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/newDice.css");						/*盤面上を転がるダイスを消す*/
