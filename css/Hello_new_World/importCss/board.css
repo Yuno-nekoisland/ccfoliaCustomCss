@@ -14,11 +14,6 @@
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");						/*BGM周りのUIを消す*/
 
 /*▼変数初期化▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
-:root{
-	--balloon-left: 0px;
-	--balloon-right: 0px;
-	--balloon-bottom: 50px;
-}
 
 /*▼参考ソース設定内容▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
 /*@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/board.css");にて記載の設定*/
