@@ -3,6 +3,6 @@
 /*DiceWindowの位置調整*/
 :root{
 	--balloon-left: 0px;
-	--balloon-right: 750px;
+	--balloon-right: 1150px;
 	--balloon-bottom: 50px;
 }
