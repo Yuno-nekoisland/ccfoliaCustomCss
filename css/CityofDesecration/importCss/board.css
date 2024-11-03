@@ -1,0 +1,79 @@
+/*▼import▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/board.css");
+
+/*▼変数初期化▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+:root {
+	/*1_icon*/
+	--image-background: var(--background-color);
+	--image-width: 150px;
+	--image-height: 150px;
+	--image-border-color: var(--border-color);
+	--image-border-width: var(--border-width, 6px);
+	--image-border-radius: 0%;
+	--image-margin: .5rem;
+	/* 非表示設定 'block' or 'none' */
+	--image-display: block;
+
+	/*2_ボックス*/
+	--balloon-left: 0px;
+	--balloon-right: 350px;
+	--balloon-bottom: 50px;
+	--balloon-border-radius: var(--border-radius, 10px);
+	--balloon-width: 720px;
+
+	/*3_ボックス内テキスト
+	*/
+	--font-size-name: 15px;
+	--font-size-main: 17px;
+}
+
+/*▼メイン処理▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+/*オブジェクトを操作できるように活性化させる。*/
+[role="presentation"]:not(.MuiSnackbar-root) {
+	display: inline;
+}
+
+/*キャラ駒を映さない
+tabindex指定により、非活性対象をキャラ駒のみとする。
+（スクリーンパネルの拡大表示が非対象となり、拡大表示しても映ったままとなる。）
+*/
+figure[tabindex="-1"] {
+	display: none;
+}
+
+/*吹き出し関連*/
+/*吹き出しを出す*/
+#root .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+	display: block;
+}
+/*1_icon*/
+.MuiPaper-root>img {
+	display: var(--image-display);
+	width: var(--image-width);
+	height: var(--image-height);
+	margin-bottom: var(--image-margin);
+	background: var(--image-background);
+	border: solid var(--image-border-width) var(--image-border-color);
+	border-radius: var(--image-border-radius);
+	object-fit: cover;
+	object-position: top;
+}
+/*2_ボックス*/
+div[tabindex="0"]>.MuiPaper-root {
+	background-color: transparent;
+	max-width: var(--balloon-width);
+	left: var(--balloon-left);
+	right: var(--balloon-right);
+	bottom: var(--balloon-bottom);
+	border-radius: var(--balloon-border-radius);
+}
+/*3_ボックス内テキスト*/
+/* 名前+ダイス結果*/
+.MuiTypography-subtitle2,
+.MuiTypography-body2 {
+	font-size: var(--font-size-name);
+}
+/* 本文 */
+.MuiTypography-body1 {
+	font-size: var(--font-size-main);
+}
