@@ -1,0 +1,9 @@
+[class*='Voice_voiceStates__']>:not([data-userid="DiscordのユーザID"]){
+    display: none;
+}
+body {
+  transform: scale(1.5);
+  transform-origin: left top;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
