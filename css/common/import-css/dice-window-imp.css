@@ -19,6 +19,8 @@
   --dice-window-width : 800px;
   --dice-window-height : 300px;
   --dice-window-bottom : 50px;
+  --dice-window-left : 0px;
+  --dice-window-right : 1150px;
   /* ①ダイス本体 */
   --dice-size : 100%;
   --dice-bottom : 5%;
@@ -60,6 +62,10 @@
   bottom : var(--dice-window-bottom) !important; /* 底辺からの高さ */
   background: rgba(0, 0, 0, 1) !important;     /* 背景色 */
   position: absolute !important;                 /* ウインドウ裏の謎の黒い下敷きを非活性化 */
+}
+div[tabindex="0"]>.MuiPaper-root.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6{
+  left : var(--dice-window-left) !important;     /* 左側からの位置 */
+  right : var(--dice-window-right) !important;   /* 右側からの位置 */
 }
 
 /* ①ダイス本体 */
