@@ -1,9 +1,9 @@
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/status/main.css");
 /*▼変数▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
 :root {
-	--avatar-padding: 0;
-	--avatar-display: none;
-	--status-width: 200px;
-	--status-height: 30px;
-	--status-font-size: 1.6rem;
+  --avatar-padding: 0;
+  --avatar-display: none;
+  --status-width: 200px;
+  --status-height: 30px;
+  --status-font-size: 1.6rem;
 }

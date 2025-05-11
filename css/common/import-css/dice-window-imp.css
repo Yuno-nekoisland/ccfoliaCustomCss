@@ -1,0 +1,102 @@
+/*import:▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css");            /*▼▼おまじない*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");          /*■ヘッダーを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");          /*■BGM周りのUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css");          /*■キャラのステータスのUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");            /*■ルームチャット全体を消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");         /*■拡大縮小のUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");            /*■鉛筆マークを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css");         /*■吹き出しを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardForeground.css"); /*盤面の「前景」を消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css"); /*盤面の「背景」を消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/screenPanel.css");     /*「スクリーンパネル」を消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/character.css");       /*盤面の「キャラクター」を消す*/
+/*▼変数初期化▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+:root{
+  /* 活性化設定 */
+  --skip-bottom-dice-window : block;
+  /* ⓪ウィンドウ全体 */
+  --dice-window-width : 800px;
+  --dice-window-height : 300px;
+  --dice-window-bottom : 50px;
+  /* ①ダイス本体 */
+  --dice-size : 100%;
+  --dice-bottom : 5%;
+  --dice-space-right : 3%;
+  /* ②ダイスウィンドウヘッダー */
+  --dice-header-margin-top : 5px;
+  --dice-header-font-size : 100%;
+  /* ③ダイスウィンドウ本文 */
+  --dice-body-text-page-margin-top : 5px;
+  --dice-body-text-page-padding-left : 30px;
+  --dice-body-text-page-height : 200px; /* ⓪ウィンドウ全体の高さより低くする。 */
+  --dice-body-text-font-size : 100%;
+}
+/*▼main▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+/* 活性化設定 */
+/* スクロールバー */
+.MuiPaper-rounded > div > div:last-child::-webkit-scrollbar {
+  display: none !important;
+}
+/* ダイスウィンドウの立ち絵 */
+.MuiPaper-root>img {
+  display: none !important;
+}
+/* スキップボタン */
+[aria-label="スキップ"] {
+  display: var(--skip-dice-window);
+}
+/* ダイスウィンドウ本体 */
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+  display: block !important;
+}
+
+/*▼ダイスウィンドウ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+/* ⓪ウィンドウ全体 */
+.MuiPaper-elevation6:nth-child(2),
+.MuiPaper-rounded:first-child{
+  width :  var(--dice-window-width) !important;  /* 横幅 */
+  height : var(--dice-window-height) !important; /* 縦幅 */
+  bottom : var(--dice-window-bottom) !important; /* 底辺からの高さ */
+  background: rgba(0, 0, 0, 1) !important;     /* 背景色 */
+  position: absolute !important;                 /* ウインドウ裏の謎の黒い下敷きを非活性化 */
+}
+
+/* ①ダイス本体 */
+/* ダイス画像 */
+img[src*="dice"] {
+  /** サイズ設定 */
+  width : var(--dice-pic-size) !important;
+  height : var(--dice-pic-size) !important;
+}
+/* ダイス位置 */
+.kXQOsh {
+  bottom : var(--dice-bottom) !important;     /* 上下位置の調整 */
+  right : var(--dice-space-right) !important; /* 右側のスペースの幅 */
+}
+
+/* ②ダイスウィンドウヘッダー */
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-dense.sc-bgPvvg.kOzwYk.css-6tsndk{
+  margin-top : var(--dice-header-margin-top) !important;
+}
+  /* 結果とスキップ部分の隙間
+  .sc-fbNZEX.iSXzVP{
+    display : none;
+  }*/
+/* font-1.名前,font-2.成功結果 */
+.MuiTypography-root.MuiTypography-subtitle2.css-hf8y9a,
+.MuiTypography-root.MuiTypography-body2.sc-vMHMw.jzbtUy.css-1l6qhgm{
+  font-size : var(--dice-header-font-size) !important;
+}
+
+/* ③ダイスウィンドウ本文 */
+/* 本文のdiv本体 */
+.MuiPaper-rounded > div > div:last-child{
+  margin-top : var(--dice-body-text-page-margin-top) !important;     /* 上の余白 */
+  padding-left : var(--dice-body-text-page-padding-left) !important; /* 左の余白 */
+  height : var(--dice-body-text-page-height) !important;             /* テキストボックスの縦幅 */
+}
+/* 本文の文字列 */
+.MuiTypography-body1{
+  font-size : var(--dice-body-text-font-size) !important;            /* 文字サイズ */
+}

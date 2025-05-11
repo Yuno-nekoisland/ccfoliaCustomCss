@@ -1,0 +1,22 @@
+@import url("https://yuno-nekoisland.github.io/ccfoliaCustomCss/css/ultra-heroic/import-css/board-imp-uh.css");
+/*▼変数▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+:root{
+  /* 活性化設定 */
+  --skip-bottom-dice-window : none;
+  /* ⓪ウィンドウ全体 */
+  --dice-window-width : 800px;
+  --dice-window-height : 300px;
+  --dice-window-bottom : 50px;
+  /* ①ダイス本体 */
+  --dice-size : 100%;
+  --dice-bottom : 5%;
+  --dice-space-right : 3%;
+  /* ②ダイスウィンドウヘッダー */
+  --dice-header-margin-top : 5px;
+  --dice-header-font-size : 100%;
+  /* ③ダイスウィンドウ本文 */
+  --dice-body-text-page-margin-top : 5px;
+  --dice-body-text-page-padding-left : 30px;
+  --dice-body-text-page-height : 200px; /* ⓪ウィンドウ全体の高さより低くする。 */
+  --dice-body-text-font-size : 100%;
+}

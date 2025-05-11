@@ -1,0 +1,13 @@
+/* 前景
+  ver:1.32.12で動作確認済
+*/
+div[tabindex="0"]
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-of-type(1) {
+    display: none;
+}

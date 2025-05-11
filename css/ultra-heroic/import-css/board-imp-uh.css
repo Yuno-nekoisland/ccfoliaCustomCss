@@ -1,0 +1,8 @@
+/*▼import:▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");  /*■ヘッダーを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");  /*■BGM周りのUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css");  /*■キャラのステータスのUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");    /*■ルームチャット全体を消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css"); /*■拡大縮小のUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");    /*■鉛筆マークを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css"); /*■吹き出しを消す*/
