@@ -11,4 +11,4 @@
   - kebab-case（例: `main-header`）
     - URLやCLIと相性が良いため
     - Web業界でのデファクトスタンダード
-    - 参考: [Zenn記事](https://zenn.dev/ken7253/scraps/461258929f9bf3)
+    - 参考: [Zenn:フロントエンド命名規則まとめ](https://zenn.dev/ken7253/scraps/461258929f9bf3)
