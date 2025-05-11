@@ -14,7 +14,7 @@
 /*▼変数初期化▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
 :root{
   /* 活性化設定 */
-  --skip-bottom-dice-window : block;
+  --skip-button-dice-window : block;
   /* ⓪ウィンドウ全体 */
   --dice-window-width : 800px;
   --dice-window-height : 300px;
@@ -22,7 +22,7 @@
   --dice-window-left : 0px;
   --dice-window-right : 1150px;
   /* ①ダイス本体 */
-  --dice-size : 100%;
+  --dice-size : 75px; /* 75pxがCCFOLIAデフォルトのサイズ */
   --dice-bottom : 5%;
   --dice-space-right : 3%;
   /* ②ダイスウィンドウヘッダー */
@@ -46,7 +46,7 @@
 }
 /* スキップボタン */
 [aria-label="スキップ"] {
-  display: var(--skip-dice-window);
+  display: var(--skip-button-dice-window);
 }
 /* ダイスウィンドウ本体 */
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
@@ -70,15 +70,17 @@ div[tabindex="0"]>.MuiPaper-root.MuiPaper-root.MuiPaper-elevation.MuiPaper-round
 
 /* ①ダイス本体 */
 /* ダイス画像 */
-img[src*="dice"] {
-  /** サイズ設定 */
-  width : var(--dice-pic-size) !important;
-  height : var(--dice-pic-size) !important;
+.kXQOsh>img{
+  /* サイズ設定 */
+  width : var(--dice-size) !important;
+  height : auto !important; /* アスペクト比維持 */
 }
 /* ダイス位置 */
 .kXQOsh {
   bottom : var(--dice-bottom) !important;     /* 上下位置の調整 */
   right : var(--dice-space-right) !important; /* 右側のスペースの幅 */
+  justify-content: flex-end !important;       /* 横方向: 右寄せ */
+  align-items: flex-end !important;           /* 縦方向: 下寄せ */
 }
 
 /* ②ダイスウィンドウヘッダー */
