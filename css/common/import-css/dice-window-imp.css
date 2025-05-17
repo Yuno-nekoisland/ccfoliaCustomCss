@@ -1,12 +1,12 @@
 /*import:▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css");            /*▼▼おまじない*/
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");          /*■ヘッダーを消す*/
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");          /*■BGM周りのUIを消す*/
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css");          /*■キャラのステータスのUIを消す*/
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");            /*■ルームチャット全体を消す*/
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");         /*■拡大縮小のUIを消す*/
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");            /*■鉛筆マークを消す*/
-@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css");         /*■吹き出しを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");          /*ヘッダーを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");          /*BGM周りのUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css");          /*キャラのステータスのUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");            /*ルームチャット全体を消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");         /*拡大縮小のUIを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");            /*鉛筆マークを消す*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css");         /*吹き出しを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardForeground.css"); /*盤面の「前景」を消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css"); /*盤面の「背景」を消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/screenPanel.css");     /*「スクリーンパネル」を消す*/
@@ -21,6 +21,7 @@
   --dice-window-bottom : 50px;
   --dice-window-left : 0px;
   --dice-window-right : 1150px;
+  --dice-window-background-color : rgba(0, 0, 0, 1.0);
   /* ①ダイス本体 */
   --dice-size : 75px; /* 75pxがCCFOLIAデフォルトのサイズ */
   --dice-bottom : 5%;
@@ -57,11 +58,11 @@
 /* ⓪ウィンドウ全体 */
 .MuiPaper-elevation6:nth-child(2),
 .MuiPaper-rounded:first-child{
-  width :  var(--dice-window-width) !important;  /* 横幅 */
-  height : var(--dice-window-height) !important; /* 縦幅 */
-  bottom : var(--dice-window-bottom) !important; /* 底辺からの高さ */
-  background: rgba(0, 0, 0, 1) !important;     /* 背景色 */
-  position: absolute !important;                 /* ウインドウ裏の謎の黒い下敷きを非活性化 */
+  width :  var(--dice-window-width) !important;                /* 横幅 */
+  height : var(--dice-window-height) !important;               /* 縦幅 */
+  bottom : var(--dice-window-bottom) !important;               /* 底辺からの高さ */
+  background : var(--dice-window-background-color) !important; /* 背景色 */
+  position: absolute !important;                               /* ウインドウ裏の謎の黒い下敷きを非活性化 */
 }
 div[tabindex="0"]>.MuiPaper-root.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6{
   left : var(--dice-window-left) !important;     /* 左側からの位置 */
