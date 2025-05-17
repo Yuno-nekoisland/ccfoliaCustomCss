@@ -1,0 +1,15 @@
+[class^="Voice_avatar__"] {
+  display: none;
+}
+[id="DiscordのID"] [class^="Voice_avatar__"] {
+  display: inline;
+}
+body {
+  position: absolute;  /* 位置指定を可能にする */
+  left: 0px;           /* 右からの位置調整 */
+  top: 100px;          /* 上からの位置調整 */
+  margin: 0;           /* 余白なし */
+  overflow: hidden;    /* はみ出た部分は非表示 */
+  zoom: 2.0;           /* サイズの倍率を調整 */
+  align-items: center; /* 縦方向の交差軸において、子要素を中央揃えにする */
+}
