@@ -9,7 +9,7 @@
   --dice-window-bottom : 20px;
   --dice-window-left : 0px;
   --dice-window-right : 0px;
-  --dice-window-background-color : rgba(0, 0, 0, 0.98) !important;
+  --dice-window-background-color : rgba(0, 0, 0, 0.98);
   /* ①ダイス本体 */
   --dice-size : 73px;
   --dice-bottom : 5%;
