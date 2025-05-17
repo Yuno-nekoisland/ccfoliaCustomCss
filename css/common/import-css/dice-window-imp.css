@@ -21,7 +21,7 @@
   --dice-window-bottom : 50px;
   --dice-window-left : 0px;
   --dice-window-right : 1150px;
-  --dice-window-background-color : rgba(0, 0, 0, 1.0);
+  --dice-window-background-color : rgba(0, 0, 0, 1.0) !important;
   /* ①ダイス本体 */
   --dice-size : 75px; /* 75pxがCCFOLIAデフォルトのサイズ */
   --dice-bottom : 5%;
