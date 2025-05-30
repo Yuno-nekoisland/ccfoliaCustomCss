@@ -95,7 +95,7 @@ div[tabindex="0"]>.MuiPaper-root.MuiPaper-root.MuiPaper-elevation.MuiPaper-round
   }*/
 /* font-1.名前,font-2.成功結果 */
 .MuiTypography-root.MuiTypography-subtitle2.css-hf8y9a,
-.MuiTypography-root.MuiTypography-body2.sc-vMHMw.jzbtUy.css-1l6qhgm{
+.MuiTypography-root.MuiTypography-body2.sc-vMHMw.jzbtUy{
   font-size : var(--dice-header-font-size) !important;
 }
 
