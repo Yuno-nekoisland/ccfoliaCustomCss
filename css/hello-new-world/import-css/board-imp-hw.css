@@ -3,6 +3,7 @@
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");                          /*BGM周りのUIを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/status.css");                          /*キャラのステータスのUIを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-scrollbar.css");                      /*スクロールバーを非活性化*/
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/ctrlDrag.css");                        /*ctrlDragを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");                         /*拡大縮小のUIを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");                            /*鉛筆マークを消す*/
 @import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css");                         /*吹き出しを消す*/
@@ -14,6 +15,6 @@ header.MuiAppBar-positionSticky{
   display : none;
 }
 /*roomChatの操作欄非活性化*/
-.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation6.sc-hQYqdF.dlEsCa.css-1ktqdd8{
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation6{
   display : none;
 }
